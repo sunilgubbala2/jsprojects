@@ -1,0 +1,51 @@
+* {
+ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    height: 100vh;
+    background-color: rgb(230, 107, 107);
+    cursor:none;
+}
+ 
+.cursor-dot{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(192, 54, 54);
+    border-radius: 50px;
+    left:0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: -15s;
+ 
+}
+ 
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgb(192, 54, 54);
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: -5s; 
+}
+ 
+.cursor-dot,.cursor-outline {
+    position: fixed;
+    top:0;
+    left: 0;
+    transform: translate(-50%,-50%);
+ 
+    border-radius: 50px;
+   
+    z-index: 5;
+    pointer-events: none;
+ 
+ 
+}
